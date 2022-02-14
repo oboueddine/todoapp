@@ -1,7 +1,7 @@
 import React from "react"
 
 
-const About = () => {
+const About = (props) => {
  
   
   
@@ -10,7 +10,7 @@ const About = () => {
   return (
           <div className="about__content">
             <ul className="about__list">
-                page about
+                je suis sur la page about
             </ul>
         </div>
 )
