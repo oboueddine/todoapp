@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter , Routes, Route } from "react-router-dom"
 import About from "./functionBased/pages/About"
 import NotMatch from "./functionBased/pages/NotMatch"
 import SinglePage from "./functionBased/pages/SinglePage"
@@ -17,7 +17,7 @@ import "./functionBased/App.css"
 ReactDOM.render(
   <React.StrictMode>
     
-    <BrowserRouter>
+    <HashRouter >
     <Navbar />
     <Routes>
       <Route path="/" element={<TodoContainer />} />
@@ -25,7 +25,7 @@ ReactDOM.render(
       <Route  path="/about/:slug" element={ <SinglePage /> }/>
       <Route path="*" element={<NotMatch />} />
     </Routes>
-    </BrowserRouter>
+    </HashRouter >
   </React.StrictMode>,
   document.getElementById("root")
 );
