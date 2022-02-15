@@ -151,6 +151,7 @@ a {
 
 .main__content {
   flex: 7;
+  padding: 8rem 40px;
 }
 
 .main__content h1 {

@@ -1,18 +1,22 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 
 const About = (props) => {
  
   
-  
-  //console.log()
 
   return (
           <div className="about__content">
             <ul className="about__list">
-                je suis sur la page about
+              <li>
+                <Link to={`/about/about-app`}>About App</Link>
+              </li>
+              <li>
+                <Link to={`/about/about-author`}>About Author</Link>
+              </li>
             </ul>
         </div>
-)
+      )
 }
 export default About
